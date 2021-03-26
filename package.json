@@ -1,0 +1,30 @@
+{
+  "name": "testokur-ui-components",
+  "version": "1.0.0",
+  "description": "Yet another reusable react UI component library to be used by testokur apps",
+  "main": "index.js",
+  "author": "Nazmi Altun <nazmialtun@windowslive.com>",
+  "license": "MIT",
+  "homepage": "https://testokur.github.io/testokur-ui-components",
+  "bugs": {
+    "url": "https://github.com/testokur/testokur-ui-components/issues"
+  },
+  "keywords": [
+    "testokur",
+    "component",
+    "components",
+    "design",
+    "framework",
+    "frontend",
+    "react",
+    "react-component",
+    "ui"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:testokur/testokur-ui-components.git"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5"
+  }
+}
