@@ -31,6 +31,9 @@
     "test:watch": "jest --watchAll --env=jsdom --passWithNoTests"
   },
   "devDependencies": {
+    "@babel/core": "^7.13.13",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.13.13",
     "eslint": "^7.23.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-cypress": "^2.11.2",
