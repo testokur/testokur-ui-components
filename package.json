@@ -3,12 +3,6 @@
   "version": "1.0.0",
   "description": "Yet another reusable react UI component library to be used by testokur apps",
   "main": "index.js",
-  "scripts": {
-    "format": "prettier --check --write '**/*'",
-    "lint": "eslint --fix ",
-    "test": "jest --env=jsdom --passWithNoTests --coverage",
-    "test:watch": "jest --watchAll --env=jsdom --passWithNoTests"
-  },
   "author": "Nazmi Altun <nazmialtun@windowslive.com>",
   "license": "MIT",
   "homepage": "https://testokur.github.io/testokur-ui-components",
@@ -30,6 +24,12 @@
     "type": "git",
     "url": "git@github.com:testokur/testokur-ui-components.git"
   },
+  "scripts": {
+    "format": "prettier --check --write '**/*'",
+    "lint": "eslint --fix ",
+    "test": "jest --env=jsdom --passWithNoTests --coverage",
+    "test:watch": "jest --watchAll --env=jsdom --passWithNoTests"
+  },
   "devDependencies": {
     "eslint": "^7.23.0",
     "eslint-config-prettier": "^8.1.0",
@@ -38,7 +38,9 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.23.1",
     "eslint-plugin-testing-library": "^3.10.2",
+    "husky": "^5.2.0",
     "jest": "^26.6.3",
+    "lint-staged": "^10.5.4",
     "prettier": "^2.2.1"
   },
   "dependencies": {
