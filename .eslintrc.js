@@ -3,14 +3,16 @@ module.exports = {
     extends: [
         'eslint:recommended',
         'plugin:react/recommended',
-        'prettier',
+        'plugin:cypress/recommended',
+        "plugin:flowtype/recommended",
+        'plugin:import/errors',
+        'plugin:import/warnings',
         'plugin:jest/recommended',
-        'plugin:testing-library/react',
-        'plugin:testing-library/recommended',
-        'plugin:jest-dom/recommended'
-    ],
-    plugins: ['prettier', 'react', 'jest', 'testing-library', 'jest-dom'],
-    "rules": {
-        "prettier/prettier": ["error"]
-    },
+        'plugin:jest-dom/recommended',
+        "plugin:jsx-a11y/recommended",
+        'plugin:prettier/recommended',
+        "prettier/react",
+        "plugin:react-hooks/recommended",
+        'plugin:testing-library/react'
+    ]
 };
