@@ -25,7 +25,7 @@
     "url": "git@github.com:testokur/testokur-ui-components.git"
   },
   "scripts": {
-    "format": "prettier --check --write '**/*'",
+    "format": "prettier --check  --write '**/*'",
     "lint": "eslint --fix ",
     "test": "jest --env=jsdom --passWithNoTests --coverage",
     "test:watch": "jest --watchAll --env=jsdom --passWithNoTests"
