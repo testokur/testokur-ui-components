@@ -26,7 +26,7 @@
   },
   "scripts": {
     "format": "prettier -c --write .",
-    "lint": "eslint . --fix --ext .js",
+    "lint": "eslint . --fix --ext .js && stylelint src",
     "test": "jest --env=jsdom --passWithNoTests --coverage",
     "test:watch": "jest --watchAll --env=jsdom --passWithNoTests"
   },
