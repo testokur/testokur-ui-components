@@ -1,0 +1,22 @@
+{
+  "singleQuote": true,
+  "trailingComma": "all",
+  "parser": "babel",
+  "printWidth": 100,
+  "proseWrap": "never",
+  "arrowParens": "avoid",
+  "overrides": [
+    {
+      "files": "*.css",
+      "options": {
+        "parser": "css"
+      }
+    },
+    {
+      "files": ["*.prettierrc", "*.babelrc", "*.huskyrc", "*.lintstagedrc"],
+      "options": {
+        "parser": "json"
+      }
+    }
+  ]
+}

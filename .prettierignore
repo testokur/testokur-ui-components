@@ -7,3 +7,5 @@ yarn.lock
 .DS_Store
 .editorconfig
 .eslintignore
+package.json
+README.md

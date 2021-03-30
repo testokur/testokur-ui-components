@@ -1,30 +1,33 @@
-'use strict';
-
 module.exports = {
+  parser: '@babel/eslint-parser',
   root: true,
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
-    'plugin:cypress/recommended',
-    'plugin:flowtype/recommended',
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:jest/recommended',
     'plugin:jest-dom/recommended',
-    'plugin:jsx-a11y/recommended',
     'plugin:prettier/recommended',
-    'prettier/react',
+    'prettier',
     'plugin:react-hooks/recommended',
     'plugin:testing-library/react',
   ],
+  env: {
+    browser: true,
+    node: true,
+  },
   plugins: ['react'],
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
   parserOptions: {
+    ecmaVersion: 6,
+    sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
     },
-  },
-  rules: {
-    'react/jsx-uses-react': 'off',
-    'react/react-in-jsx-scope': 'off',
   },
 };

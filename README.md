@@ -1,2 +1,3 @@
 # testokur-ui-components
-Yet another reusable react UI component library to be used by testokur apps
+
+Reusable react UI components to be used to build testokur apps
