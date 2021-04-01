@@ -1,7 +1,0 @@
-{
-    "src/**/*.+(js|css)":[
-      "prettier -c --write .",
-      "eslint . --fix --ext .js && stylelint src"
-      "git add"
-    ]
-}

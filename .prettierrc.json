@@ -10,12 +10,6 @@
       "options": {
         "parser": "css"
       }
-    },
-    {
-      "files": ["*.prettierrc", "*.babelrc", "*.huskyrc", "*.lintstagedrc"],
-      "options": {
-        "parser": "json"
-      }
     }
   ]
 }
