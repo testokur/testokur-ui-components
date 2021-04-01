@@ -1,9 +1,8 @@
-'use strict';
-
 module.exports = {
   parser: '@babel/eslint-parser',
   root: true,
   extends: [
+    'airbnb',
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:import/errors',
@@ -12,7 +11,6 @@ module.exports = {
     'plugin:jest-dom/recommended',
     'plugin:prettier/recommended',
     'prettier',
-    'plugin:react-hooks/recommended',
     'plugin:testing-library/react',
   ],
   env: {

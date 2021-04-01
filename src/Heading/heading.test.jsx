@@ -14,9 +14,13 @@ describe('Heading', () => {
     expect(heading).toHaveClass('title1');
   });
 
-  it("should render with passed props", () =>{
+  it('should render with passed props', () => {
     const content = 'This is also a header';
-    render(<Heading renderAs="h3" size={5} >{content}</Heading>);
+    render(
+      <Heading renderAs="h3" size={5}>
+        {content}
+      </Heading>,
+    );
 
     const heading = screen.getByTestId('heading');
     expect(heading).toHaveTextContent(content);
