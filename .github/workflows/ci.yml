@@ -36,3 +36,6 @@ jobs:
 
       - name: Running Tests
         run: yarn test
+
+      - name: Deploy Storybook
+        run: yarn deploy-storybook

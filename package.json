@@ -30,7 +30,8 @@
     "test": "jest --env=jsdom --passWithNoTests --coverage",
     "test:watch": "jest --watchAll --env=jsdom --passWithNoTests",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "rimraf storybook-static && build-storybook"
+    "build-storybook": "rimraf storybook-static && build-storybook",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "devDependencies": {
     "@babel/core": "^7.13.14",
@@ -39,6 +40,7 @@
     "@babel/preset-react": "^7.13.13",
     "@storybook/addon-knobs": "^6.2.2",
     "@storybook/react": "^6.2.2",
+    "@storybook/storybook-deployer": "^2.8.7",
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.5",
     "babel-jest": "^26.6.3",
