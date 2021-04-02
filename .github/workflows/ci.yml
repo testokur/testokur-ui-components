@@ -38,4 +38,4 @@ jobs:
         run: yarn test
 
       - name: Deploy Storybook
-        run: yarn deploy-storybook
+        run: yarn deploy-storybook -- --ci
