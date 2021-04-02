@@ -3,6 +3,7 @@ module.exports = {
     "../src/**/*.stories.@(js|jsx)"
   ],
   "addons": [
-    '@storybook/addon-knobs'
+    '@storybook/addon-knobs',
+    '@storybook/addon-a11y'
   ]
 }
