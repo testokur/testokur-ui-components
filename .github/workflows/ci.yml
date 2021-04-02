@@ -37,6 +37,8 @@ jobs:
       - name: Running Tests
         run: yarn test
 
+      - uses: codecov/codecov-action@v1
+      
       - name: Deploy Storybook
         run: yarn deploy-storybook --ci
         env:
