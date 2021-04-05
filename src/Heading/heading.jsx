@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ElementTypes from './elementTypes';
 import classnames from 'classnames';
+import './styles.css';
 
 const heading = ({ children, renderAs = 'h1', size = 1, dataTestId = 'heading' }) => {
   const Element = renderAs;

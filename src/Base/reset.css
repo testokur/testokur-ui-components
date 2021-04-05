@@ -43,10 +43,10 @@ table {
 }
 
 :root {
+  background-color: var(--bg-color, 'white');
   box-sizing: border-box;
   overflow-x: hidden;
   overflow-y: scroll;
-  background-color: var(--background-color, 'white');
 }
 
 *,

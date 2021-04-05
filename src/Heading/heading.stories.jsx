@@ -1,5 +1,4 @@
 import React from 'react';
-import { text } from '@storybook/addon-knobs';
 import Heading from '.';
 
 export default {
@@ -7,6 +6,15 @@ export default {
 };
 
 export const Default = () => {
-  const customTitle = text('Title', 'This is a Header');
-  return <Heading>{customTitle}</Heading>;
+  return (
+    <>
+      <Heading>{'Default Heading'}</Heading>
+      <Heading size={1}>{'Size 1'}</Heading>
+      <Heading size={2}>{'Size 2'}</Heading>
+      <Heading size={3}>{'Size 3'}</Heading>
+      <Heading size={4}>{'Size 4'}</Heading>
+      <Heading size={5}>{'Size 5'}</Heading>
+      <Heading size={6}>{'Size 6'}</Heading>
+    </>
+  );
 };

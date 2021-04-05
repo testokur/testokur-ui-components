@@ -1,0 +1,33 @@
+.title1,
+.title2,
+.title3,
+.title4,
+.title5,
+.title6 {
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.title1 {
+  font-size: 2rem;
+}
+
+.title2 {
+  font-size: 1.6rem;
+}
+
+.title3 {
+  font-size: 1.4rem;
+}
+
+.title4 {
+  font-size: 1.2rem;
+}
+
+.title5 {
+  font-size: 1rem;
+}
+
+.title6 {
+  font-size: 0.8rem;
+}
