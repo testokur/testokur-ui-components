@@ -38,7 +38,9 @@ jobs:
         run: yarn test
 
       - name: Running Visual Tests
-        run: yarn visual-test
+        run: |
+            yarn storybook
+            yarn visual-test
 
       - uses: codecov/codecov-action@v1
 
