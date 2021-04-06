@@ -3,3 +3,7 @@ node_modules
 coverage/
 yarn-error.log
 storybook-static
+
+# cypress
+cypress/videos
+cypress/screenshots
