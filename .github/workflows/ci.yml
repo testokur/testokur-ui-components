@@ -41,7 +41,9 @@ jobs:
         run: |
             yarn build-storybook --quiet
             npx http-server storybook-static -p 6006 & npx wait-on http://localhost:6006
-            yarn visual-test
+            yarn percy exec -- cypress run -e CI=true
+        env:
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
 
       - uses: codecov/codecov-action@v1
 
