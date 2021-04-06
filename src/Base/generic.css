@@ -6,3 +6,7 @@ select,
 textarea {
   font-family: var(--font-family);
 }
+
+body {
+  text-rendering: optimizeLegibility;
+}
