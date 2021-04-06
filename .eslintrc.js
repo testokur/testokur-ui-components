@@ -12,6 +12,7 @@ module.exports = {
     'plugin:prettier/recommended',
     'prettier',
     'plugin:testing-library/react',
+    'plugin:cypress/recommended',
   ],
   env: {
     browser: true,

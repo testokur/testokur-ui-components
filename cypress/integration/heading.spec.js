@@ -1,4 +1,4 @@
-import { load, visit , terminalLog} from '../helpers';
+import { load, visit, terminalLog } from '../helpers';
 
 describe('Heading', () => {
   before(() => {
@@ -7,13 +7,13 @@ describe('Heading', () => {
 
   context('given story is rendered', () => {
     beforeEach(() => {
-      load('Heading','Default');
+      load('Heading', 'Default');
     });
     it('renders correctly', () => {
       cy.percySnapshot('Heading');
     });
     it('should not have any axe errors', () => {
-        cy.checkA11y(null, null, terminalLog);
+      cy.checkA11y(null, null, terminalLog);
     });
   });
 });
