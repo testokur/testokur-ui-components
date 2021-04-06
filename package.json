@@ -28,7 +28,6 @@
     "format": "prettier -c --write .",
     "lint": "eslint . --fix --ext .js && stylelint --fix src",
     "test": "jest --env=jsdom --passWithNoTests --coverage",
-    "visual-test": "cypress run",
     "test:watch": "jest --watchAll --env=jsdom --passWithNoTests",
     "storybook": "start-storybook -p 6006",
     "deploy-storybook": "storybook-to-ghpages"
