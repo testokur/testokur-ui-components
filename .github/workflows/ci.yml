@@ -38,10 +38,11 @@ jobs:
         run: yarn test
 
       - name: Running Visual Tests
-        run: |
-            yarn build-storybook --quiet
-            npx http-server storybook-static -p 6006 & npx wait-on http://localhost:6006
-            yarn visual-test
+        uses: percy/exec-action@v0.3.1
+        with:
+          custom-command: 'yarn build-storybook --quiet && npx http-server storybook-static -p 6006 & npx wait-on http://localhost:6006 && yarn visual-test'
+        env:
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
 
       - uses: codecov/codecov-action@v1
 

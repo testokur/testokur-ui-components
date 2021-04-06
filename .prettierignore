@@ -8,3 +8,4 @@ yarn.lock
 .editorconfig
 .eslintignore
 package.json
+storybook-static
