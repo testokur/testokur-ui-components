@@ -1,3 +1,3 @@
 module.exports = {
-  plugins: [require('postcss-easy-import'), require('autoprefixer')],
+  plugins: [require('autoprefixer'),require('postcss-preset-env'),require('postcss-reporter')]
 };
