@@ -37,11 +37,15 @@ jobs:
       - name: Running Unit Tests
         run: yarn test
 
+      - name: Running Storybook on Server
+        run:   |
+            yarn build-storybook --quiet
+            npx http-server storybook-static -p 6006 & npx wait-on http://localhost:6006
+        
       - name: Running Visual Tests
-        run: |
-          yarn build-storybook --quiet
-          npx http-server storybook-static -p 6006 & npx wait-on http://localhost:6006
-          yarn percy exec -- cypress run -e CI=true
+        uses: percy/exec-action@v0.3.1
+        with:
+          command: 'cypress run'
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
 
