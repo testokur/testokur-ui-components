@@ -34,8 +34,11 @@ jobs:
       - name: Running Linters
         run: yarn lint
 
-      - name: Running Tests
+      - name: Running Unit Tests
         run: yarn test
+
+      - name: Running Visual Tests
+        run: yarn visual-test
 
       - uses: codecov/codecov-action@v1
 
