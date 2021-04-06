@@ -39,7 +39,8 @@ jobs:
 
       - name: Running Visual Tests
         run: |
-            yarn storybook --ci	
+            yarn build-storybook --quiet
+            npx http-server storybook-static -p 6006 & npx wait-on http://localhost:6006
             yarn visual-test
 
       - uses: codecov/codecov-action@v1
