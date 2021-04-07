@@ -3,4 +3,5 @@
 
 yarn format
 yarn lint
-git add .
+git add
+exit 1
