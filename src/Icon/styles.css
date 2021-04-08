@@ -1,0 +1,13 @@
+.icon {
+  display: inline-block;
+  vertical-align: top;
+  fill: none;
+  stroke-miterlimit: 10;
+  stroke-linecap: square;
+  stroke-width: 1.3;
+  overflow: visible;
+}
+
+.icon-primary {
+  stroke: var(--primary-color);
+}
