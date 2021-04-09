@@ -1,22 +1,31 @@
 import React from 'react';
-import { EnvelopeIcon, LockedIcon } from '.';
+import { EnvelopeIcon, LockedIcon, UserIcon } from '.';
 
 export default {
   title: 'Icons',
 };
 
+const IconInfo = props => {
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      {props.children}
+      <p>{props.name}</p>
+    </div>
+  );
+};
+
 export const Default = () => {
   return (
-    //TODO: Refactor this into a separate component later
     <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <IconInfo name={'Envelope Icon'}>
         <EnvelopeIcon />
-        <p>Envelope Icon</p>
-      </div>
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      </IconInfo>
+      <IconInfo name={'Locked Icon'}>
         <LockedIcon />
-        <p>Locked Icon</p>
-      </div>
+      </IconInfo>
+      <IconInfo name={'User Icon'}>
+        <UserIcon />
+      </IconInfo>
     </div>
   );
 };
