@@ -1,4 +1,22 @@
 .input {
+  appearance: none;
+  display: inline-flex;
   max-width: 100%;
   width: 100%;
+  font-size: var(--normals-size, 1rem);
+  box-shadow: var(--input-shadow);
+  border-radius: var(--control-radius, 0.375em);
+  border: var(--control-border-with, 1px) solid transparent;
+  padding-bottom: calc(0.5em - var(--control-border-with, 1px));
+  padding-top: calc(0.75em - var(--control-border-with, 1px));
+  padding-right: calc(0.75em - var(--control-border-with, 1px));
+  padding-left: calc(0.75em - var(--control-border-with, 1px));
+}
+
+.input::placeholder {
+  color: var(--input-placeholder-color);
+}
+
+.input:hover {
+  color: var(--input-hover-border-color);
 }

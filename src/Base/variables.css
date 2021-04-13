@@ -3,4 +3,9 @@
   --bg-color: hsl(0, 0%, 100%);
   --font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  --input-shadow: inset 0 0.0625em 0.125em rgba(10, 10, 10, 0.05);
+  --control-radius: 4px;
+  --control-border-with: 1px;
+  --input-placeholder-color: rgba(54, 54, 54, 0.3);
+  --input-hover-border-color: hsl(0, 0%, 71%);
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 
-import InputField from '.';
+import InputField from './inputField';
 
 describe('InputField', () => {
   it('should render expected DOM', () => {
